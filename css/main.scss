@@ -1,16 +1,20 @@
 .bb{
     background: #0dbe51;
 }
-body{
     @font-face {
   font-family: 'b';
-  src: url(../fonts/bold-webfont.woff2);
+  src: url(../font/bold-webfont.woff2);
     }
     @font-face {
-        font: 14px/1.4 'r', Arial, sans-serif;
-  font-family: 'm';
-  src: url(../fonts/regular-webfont.woff2);
-    }
+  font-family: r;
+  src: url(../font/regular-webfont.woff2); }
+body{
+p, a, b{
+        font-family: 'r';
+}
+  font-family: 'r';
+    
+    font: 14px/1.4 'r', Arial, sans-serif;
     #video-background{
         width: 100%;
     }
@@ -19,7 +23,7 @@ body{
     }
 }
 .search_last{
-    transition: .4s ease-in-out;
+    transition: 1s ease;
     display: none;
     opacity: .9;
     width: 100vw;
@@ -30,7 +34,7 @@ body{
     background: url("../photo/search_bg.png") no-repeat center center rgba(51,41,41,0.9);
     background-size: cover;
     z-index: 1000000;
-    opacity: 1.7;
+    // opacity: 1.7;
     .exit{
         background: url("../photo/download.svg") no-repeat center center rgba(51,41,41,0.9);        
         background-size: cover;
@@ -132,6 +136,7 @@ body{
                         text-decoration: none;
                         font-size: 1.8em;
                         font-weight: bold;
+                        font-family: 'b';
                     }
                 }
                 .on_off{
@@ -254,9 +259,10 @@ body{
                         margin-left: 28%;
                     }
                     h2{
-                        font-size: 2.9em;
+                        font-size: 3em;
                         color: white;
                         font-weight: 600;
+                        font-family: 'b';
                     }
                     p{
                        font-size: 1.05em;
@@ -290,9 +296,10 @@ body{
                         margin-left: 28%;
                     }
                     h2{
-                        font-size: 2.9em;
+                        font-size: 3em;
                         color: white;
                         font-weight: 600;
+                        font-family: 'b';
                     }
                     p{
                         font-size: 1.1em;
@@ -325,9 +332,10 @@ body{
                         margin-left: 28%;
                     }
                     h2{
-                        font-size: 2.9em;
+                        font-size: 3em;
                         color: white;
                         font-weight: 600;
+                        font-family: 'b';
                     }
                     p{
                         font-size: 1.1em;
@@ -346,14 +354,14 @@ body{
             padding-left: 0;
         }
         .menu{
+            p, a, b, h2,h3{
+        font-family: 'r';
+}
             height: 63%;
             margin-top: 8%;
             width: 30%;
             display: inline-block;
             position: relative;
-            a{
-                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-            }
             > ul{
                 padding: 0;
                 border-radius: 0px 6px 6px 0;
@@ -410,7 +418,6 @@ body{
                                 h3{
                                     margin: 15px 0 15px 8px;
                                     color: white;
-                                    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                                     font-weight: 700;
                                     font-size: 1.4em;
                                 }
@@ -420,7 +427,6 @@ body{
                                         li{
                                             margin-bottom: 10px;
                                                 a{
-                                                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                                                 color: white;
                                                 display: inline-block;
                                                 font-size: 14px;
@@ -450,7 +456,6 @@ body{
                                 h3{
                                     margin: 20px 0 15px 8px;
                                     color: white;
-                                    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                                     font-size: 21px;
                                     font-weight: 600;
                                 }
@@ -459,7 +464,6 @@ body{
                                         li{
                                             margin-bottom: 10px;
                                                 a{
-                                                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                                                 color: white;
                                                 display: inline-block;
                                                 font-size: .9em;
@@ -623,6 +627,10 @@ body{
         }
     }
     #footer{
+        a{
+            font-family: 'r';
+
+        }
         margin-top: 4%;
         z-index: 10;
         .f_a{
@@ -638,7 +646,7 @@ body{
                 padding-left: 8%;
                 a{
                     color: white;
-                    font-size: 1em;
+                    font-size: 1.05em;
                     text-underline-position: block;                    
                 }
                 .last{
@@ -692,10 +700,10 @@ body{
             p{
                 color: white;
                 display: inline-block;
-                font-size: 13.5px;
-                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                 float: right;
                 margin-right: 5%;
+                font-family: 'r';
+                margin-top: 4px;
             }
         }
     }
@@ -708,3 +716,7 @@ body{
 .atm_first{
     height: 21.3%;
 }
+                    b{
+                        margin-right: 13px;
+                        font-family: 'r';
+                    }

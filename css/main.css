@@ -2,21 +2,23 @@
   background: #0dbe51; }
 
 @font-face {
-  body {
-    font-family: 'b';
-    src: url(../fonts/bold-webfont.woff2); } }
+  font-family: 'b';
+  src: url(../font/bold-webfont.woff2); }
 @font-face {
-  body {
-    font: 14px/1.4 'r', Arial, sans-serif;
-    font-family: 'm';
-    src: url(../fonts/regular-webfont.woff2); } }
-body #video-background {
-  width: 100%; }
-body .z_index {
-  z-index: 100000; }
+  font-family: r;
+  src: url(../font/regular-webfont.woff2); }
+body {
+  font-family: 'r';
+  font: 14px/1.4 'r', Arial, sans-serif; }
+  body p, body a, body b {
+    font-family: 'r'; }
+  body #video-background {
+    width: 100%; }
+  body .z_index {
+    z-index: 100000; }
 
 .search_last {
-  transition: .4s ease-in-out;
+  transition: 1s ease;
   display: none;
   opacity: .9;
   width: 100vw;
@@ -26,8 +28,7 @@ body .z_index {
   left: 0px;
   background: url("../photo/search_bg.png") no-repeat center center rgba(51, 41, 41, 0.9);
   background-size: cover;
-  z-index: 1000000;
-  opacity: 1.7; }
+  z-index: 1000000; }
   .search_last .exit {
     background: url("../photo/download.svg") no-repeat center center rgba(51, 41, 41, 0.9);
     background-size: cover;
@@ -113,7 +114,8 @@ body .z_index {
           color: white;
           text-decoration: none;
           font-size: 1.8em;
-          font-weight: bold; }
+          font-weight: bold;
+          font-family: 'b'; }
       #content #header .row .views .on_off {
         padding: 12px 15px 0px 15px;
         display: inline-block; }
@@ -213,9 +215,10 @@ body .z_index {
         #content #ort .try .left .left_center img {
           margin-left: 28%; }
         #content #ort .try .left .left_center h2 {
-          font-size: 2.9em;
+          font-size: 3em;
           color: white;
-          font-weight: 600; }
+          font-weight: 600;
+          font-family: 'b'; }
         #content #ort .try .left .left_center p {
           font-size: 1.05em;
           line-height: 1.5em;
@@ -241,9 +244,10 @@ body .z_index {
         #content #ort .try .center .center_center img {
           margin-left: 28%; }
         #content #ort .try .center .center_center h2 {
-          font-size: 2.9em;
+          font-size: 3em;
           color: white;
-          font-weight: 600; }
+          font-weight: 600;
+          font-family: 'b'; }
         #content #ort .try .center .center_center p {
           font-size: 1.1em;
           line-height: 1.5em;
@@ -268,9 +272,10 @@ body .z_index {
         #content #ort .try .right .right_center img {
           margin-left: 28%; }
         #content #ort .try .right .right_center h2 {
-          font-size: 2.9em;
+          font-size: 3em;
           color: white;
-          font-weight: 600; }
+          font-weight: 600;
+          font-family: 'b'; }
         #content #ort .try .right .right_center p {
           font-size: 1.1em;
           line-height: 1.5em;
@@ -287,8 +292,8 @@ body .z_index {
     width: 30%;
     display: inline-block;
     position: relative; }
-    #content #ort .menu a {
-      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+    #content #ort .menu p, #content #ort .menu a, #content #ort .menu b, #content #ort .menu h2, #content #ort .menu h3 {
+      font-family: 'r'; }
     #content #ort .menu > ul {
       padding: 0;
       border-radius: 0px 6px 6px 0;
@@ -328,7 +333,6 @@ body .z_index {
             #content #ort .menu > ul > li .about_menu .item_left_last h3 {
               margin: 15px 0 15px 8px;
               color: white;
-              font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
               font-weight: 700;
               font-size: 1.4em; }
             #content #ort .menu > ul > li .about_menu .item_left_last ul {
@@ -337,7 +341,6 @@ body .z_index {
               #content #ort .menu > ul > li .about_menu .item_left_last ul li {
                 margin-bottom: 10px; }
                 #content #ort .menu > ul > li .about_menu .item_left_last ul li a {
-                  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                   color: white;
                   display: inline-block;
                   font-size: 14px; }
@@ -362,7 +365,6 @@ body .z_index {
             #content #ort .menu > ul > li .bars_menu .item_left h3 {
               margin: 20px 0 15px 8px;
               color: white;
-              font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
               font-size: 21px;
               font-weight: 600; }
             #content #ort .menu > ul > li .bars_menu .item_left ul {
@@ -370,7 +372,6 @@ body .z_index {
               #content #ort .menu > ul > li .bars_menu .item_left ul li {
                 margin-bottom: 10px; }
                 #content #ort .menu > ul > li .bars_menu .item_left ul li a {
-                  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                   color: white;
                   display: inline-block;
                   font-size: .9em; }
@@ -473,6 +474,8 @@ body .z_index {
   #content #footer {
     margin-top: 4%;
     z-index: 10; }
+    #content #footer a {
+      font-family: 'r'; }
     #content #footer .f_a .v_f a {
       text-decoration: none;
       color: white;
@@ -482,7 +485,7 @@ body .z_index {
       padding-left: 8%; }
       #content #footer .f_a .c_f a {
         color: white;
-        font-size: 1em;
+        font-size: 1.05em;
         text-underline-position: block; }
       #content #footer .f_a .c_f .last {
         margin-left: 10px; }
@@ -525,15 +528,19 @@ body .z_index {
     #content #footer .end_f p {
       color: white;
       display: inline-block;
-      font-size: 13.5px;
-      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       float: right;
-      margin-right: 5%; }
+      margin-right: 5%;
+      font-family: 'r';
+      margin-top: 4px; }
 
 .bars_one:hover {
   background-image: url("../photo/sm_1_h.png"); }
 
 .atm_first {
   height: 21.3%; }
+
+b {
+  margin-right: 13px;
+  font-family: 'r'; }
 
 /*# sourceMappingURL=main.css.map */
